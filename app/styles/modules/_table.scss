@@ -10,7 +10,12 @@
 .company__name--edit {
   width: 50%;
 }
-
+.company__id {
+  text-align: right;
+}
+.company--new > th {
+  background-color: rgba($brand-success, 0.5) !important;
+}
 .glyphicon-chevron-down {
   font-size: 10px;
   float: right;

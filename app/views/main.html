@@ -42,8 +42,8 @@
         </tr>
       </thead>
       <tbody>
-        <tr ng-repeat="company in companiesData | orderBy:sortParameter:reverse">
-          <th>{{company._id}}</th>
+        <tr ng-repeat="company in companiesData | orderBy:sortParameter:reverse" ng-class="{'company--new': company.new}">
+          <th class="company__id">{{company._id}}</th>
           <th>
             <div class="company__name" ng-click="editCompany(company)" ng-hide="company.editing" ng-mouseover="company.mouseOver = true" ng-mouseleave="company.mouseOver = false" >
               <span>{{company.name}}</span>

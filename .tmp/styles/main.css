@@ -41224,7 +41224,35 @@ button.close {
   }
 
   line {
-    font-family: \0000314;
+    font-family: \0000313;
+  }
+}
+
+.company__id {
+  text-align: right;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/JPablo\/Sites\/qsensei-exercise\/app\/styles\/modules\/_table\.scss;
+  }
+
+  line {
+    font-family: \0000316;
+  }
+}
+
+.company--new > th {
+  background-color: rgba(92, 184, 92, 0.5) !important;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/JPablo\/Sites\/qsensei-exercise\/app\/styles\/modules\/_table\.scss;
+  }
+
+  line {
+    font-family: \0000319;
   }
 }
 
@@ -41242,7 +41270,7 @@ button.close {
   }
 
   line {
-    font-family: \0000321;
+    font-family: \0000326;
   }
 }
 
@@ -41257,7 +41285,7 @@ thead {
   }
 
   line {
-    font-family: \0000324;
+    font-family: \0000329;
   }
 }
 

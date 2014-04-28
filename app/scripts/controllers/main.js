@@ -79,7 +79,11 @@ angular.module('qsenseiExerciseApp')
             newID = $scope.companiesData.length;
             newCompany.name = name;
             newCompany._id = newID;
+            newCompany.new = true;
             $scope.companiesData.push(newCompany);
+            $timeout(function() {
+              newCompany.new = false;
+            }, 2000);
           }
         };
 
