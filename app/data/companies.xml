@@ -1,0 +1,303 @@
+<?xml version='1.0' ?>
+<companies>
+  <company id="0">
+    <name>Wal-Mart Stores</name>
+  </company>
+  <company id="1">
+    <name>Royal Dutch Shell</name>
+  </company>
+  <company id="2">
+    <name>Exxon Mobil</name>
+  </company>
+  <company id="3">
+    <name>BP</name>
+  </company>
+  <company id="4">
+    <name>Toyota Motor</name>
+  </company>
+  <company id="5">
+    <name>Japan Post Holdings</name>
+  </company>
+  <company id="6">
+    <name>Sinopec</name>
+  </company>
+  <company id="7">
+    <name>State Grid</name>
+  </company>
+  <company id="8">
+    <name>AXA</name>
+  </company>
+  <company id="9">
+    <name>China National Petroleum</name>
+  </company>
+  <company id="10">
+    <name>Chevron</name>
+  </company>
+  <company id="11">
+    <name>ING Group</name>
+  </company>
+  <company id="12">
+    <name>General Electric</name>
+  </company>
+  <company id="13">
+    <name>Total</name>
+  </company>
+  <company id="14">
+    <name>Bank of America Corp.</name>
+  </company>
+  <company id="15">
+    <name>Volkswagen</name>
+  </company>
+  <company id="16">
+    <name>ConocoPhillips</name>
+  </company>
+  <company id="17">
+    <name>BNP Paribas</name>
+  </company>
+  <company id="18">
+    <name>Assicurazioni Generali</name>
+  </company>
+  <company id="19">
+    <name>Allianz</name>
+  </company>
+  <company id="20">
+    <name>AT&amp;T</name>
+  </company>
+  <company id="21">
+    <name>Carrefour</name>
+  </company>
+  <company id="22">
+    <name>Ford Motor</name>
+  </company>
+  <company id="23">
+    <name>ENI</name>
+  </company>
+  <company id="24">
+    <name>J.P. Morgan Chase &amp; Co.</name>
+  </company>
+  <company id="25">
+    <name>Hewlett-Packard</name>
+  </company>
+  <company id="26">
+    <name>E.ON</name>
+  </company>
+  <company id="27">
+    <name>Berkshire Hathaway</name>
+  </company>
+  <company id="28">
+    <name>GDF Suez</name>
+  </company>
+  <company id="29">
+    <name>Daimler</name>
+  </company>
+  <company id="30">
+    <name>Nippon Telegraph &amp; Telephone</name>
+  </company>
+  <company id="31">
+    <name>Samsung Electronics</name>
+  </company>
+  <company id="32">
+    <name>Citigroup</name>
+  </company>
+  <company id="33">
+    <name>McKesson</name>
+  </company>
+  <company id="34">
+    <name>Verizon Communications</name>
+  </company>
+  <company id="35">
+    <name>Crédit Agricole</name>
+  </company>
+  <company id="36">
+    <name>Banco Santander</name>
+  </company>
+  <company id="37">
+    <name>General Motors</name>
+  </company>
+  <company id="38">
+    <name>HSBC Holdings</name>
+  </company>
+  <company id="39">
+    <name>Siemens</name>
+  </company>
+  <company id="40">
+    <name>American International Group</name>
+  </company>
+  <company id="41">
+    <name>Lloyds Banking Group</name>
+  </company>
+  <company id="42">
+    <name>Cardinal Health</name>
+  </company>
+  <company id="43">
+    <name>Nestlé</name>
+  </company>
+  <company id="44">
+    <name>CVS Caremark</name>
+  </company>
+  <company id="45">
+    <name>Wells Fargo</name>
+  </company>
+  <company id="46">
+    <name>Hitachi</name>
+  </company>
+  <company id="47">
+    <name>International Business Machines</name>
+  </company>
+  <company id="48">
+    <name>Dexia Group</name>
+  </company>
+  <company id="49">
+    <name>Gazprom</name>
+  </company>
+  <company id="50">
+    <name>Honda Motor</name>
+  </company>
+  <company id="51">
+    <name>Électricité de France</name>
+  </company>
+  <company id="52">
+    <name>Aviva</name>
+  </company>
+  <company id="53">
+    <name>Petrobras</name>
+  </company>
+  <company id="54">
+    <name>Royal Bank of Scotland</name>
+  </company>
+  <company id="55">
+    <name>PDVSA</name>
+  </company>
+  <company id="56">
+    <name>Metro</name>
+  </company>
+  <company id="57">
+    <name>Tesco</name>
+  </company>
+  <company id="58">
+    <name>Deutsche Telekom</name>
+  </company>
+  <company id="59">
+    <name>Enel</name>
+  </company>
+  <company id="60">
+    <name>UnitedHealth Group</name>
+  </company>
+  <company id="61">
+    <name>Société Générale</name>
+  </company>
+  <company id="62">
+    <name>Nissan Motor</name>
+  </company>
+  <company id="63">
+    <name>Pemex</name>
+  </company>
+  <company id="64">
+    <name>Panasonic</name>
+  </company>
+  <company id="65">
+    <name>Procter &amp; Gamble</name>
+  </company>
+  <company id="66">
+    <name>LG</name>
+  </company>
+  <company id="67">
+    <name>Telefónica</name>
+  </company>
+  <company id="68">
+    <name>Sony</name>
+  </company>
+  <company id="69">
+    <name>Kroger</name>
+  </company>
+  <company id="70">
+    <name>Groupe BPCE</name>
+  </company>
+  <company id="71">
+    <name>Prudential</name>
+  </company>
+  <company id="72">
+    <name>Munich Re Group</name>
+  </company>
+  <company id="73">
+    <name>Statoil</name>
+  </company>
+  <company id="74">
+    <name>Nippon Life Insurance</name>
+  </company>
+  <company id="75">
+    <name>AmerisourceBergen</name>
+  </company>
+  <company id="76">
+    <name>China Mobile Communications</name>
+  </company>
+  <company id="77">
+    <name>Hyundai Motor</name>
+  </company>
+  <company id="78">
+    <name>Costco Wholesale</name>
+  </company>
+  <company id="79">
+    <name>Vodafone</name>
+  </company>
+  <company id="80">
+    <name>BASF</name>
+  </company>
+  <company id="81">
+    <name>BMW</name>
+  </company>
+  <company id="82">
+    <name>Zurich Financial Services</name>
+  </company>
+  <company id="83">
+    <name>Valero Energy</name>
+  </company>
+  <company id="84">
+    <name>Fiat</name>
+  </company>
+  <company id="85">
+    <name>Deutsche Post</name>
+  </company>
+  <company id="86">
+    <name>Industrial &amp; Commercial Bank of China</name>
+  </company>
+  <company id="87">
+    <name>Archer Daniels Midland</name>
+  </company>
+  <company id="88">
+    <name>Toshiba</name>
+  </company>
+  <company id="89">
+    <name>Legal &amp; General Group</name>
+  </company>
+  <company id="90">
+    <name>Boeing</name>
+  </company>
+  <company id="91">
+    <name>U.S. Postal Service</name>
+  </company>
+  <company id="92">
+    <name>Lukoil</name>
+  </company>
+  <company id="93">
+    <name>Peugeot</name>
+  </company>
+  <company id="94">
+    <name>CNP Assurances</name>
+  </company>
+  <company id="95">
+    <name>Barclays</name>
+  </company>
+  <company id="96">
+    <name>Home Depot</name>
+  </company>
+  <company id="97">
+    <name>Target</name>
+  </company>
+  <company id="98">
+    <name>ArcelorMittal</name>
+  </company>
+  <company id="99">
+    <name>WellPoint</name>
+  </company>
+</companies>
