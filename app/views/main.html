@@ -7,8 +7,13 @@
 
 <div class="row">
   <div class="col-xs-12">
-    <h3>Companies</h3>
-    <table class="table table-striped table-hover">
+    <h3>Companies&nbsp;
+      <button class="btn btn-sm btn-success">
+        <span class="glyphicon glyphicon-plus"></span>
+        &nbsp;Add
+      </button>
+    </h3>
+    <table class="table table-striped table-hover" ng-init="setTable()">
       <thead>
         <tr>
           <th>ID</th>
@@ -16,11 +21,14 @@
         </tr>
       </thead>
       <tbody>
-        <tr ng-repeat="company in companies">
+        <tr ng-repeat="company in companiesData.companies.company">
           <th>{{company._id}}</th>
           <th>
-            <div class="company__name" ng-click="company.editing = true;" ng-hide="company.editing">{{company.name}}</div>
-            <input type="text" ng-model="company.name" ng-show="company.editing" ng-keyup="stopEditing($event)">
+            <div class="company__name" ng-click="editCompany(company)" ng-hide="company.editing" ng-mouseover="company.mouseOver = true" ng-mouseleave="company.mouseOver = false">
+              <span>{{company.name}}</span>
+              <span class="glyphicon glyphicon-edit" ng-show="company.mouseOver"></span>
+            </div>
+            <input type="text" ng-model="company.name" ng-if="company.editing" ng-keyup="stopEditing($event, company)" focus-me="company.focus">
           </th>
         </tr>
       </tbody>
