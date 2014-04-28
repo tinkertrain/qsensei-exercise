@@ -75,7 +75,7 @@ angular.module('qsenseiExerciseApp')
         $scope.addCompany = function(name) {
           var newCompany = {};
           var newID;
-          if(name !== '') {
+          if(name && name !== '') {
             newID = $scope.companiesData.length;
             newCompany.name = name;
             newCompany._id = newID;
