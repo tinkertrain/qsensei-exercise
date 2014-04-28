@@ -8,14 +8,11 @@ angular.module('qsenseiExerciseApp')
           $http(
             {
               method: 'GET',
-              url: '/data/companies.xml',
-              transformResponse: function(xmlData, headersGetter) {
-                var x2js = new X2JS();
-                var companiesData = x2js.xml_str2json( xmlData );
-                return companiesData.companies.company;
-              }
+              url: '/data/companies.xml'
             })
-            .success(function(companiesData) {
+            .success(function(xmlData) {
+              var x2js = new X2JS();
+              var companiesData = x2js.xml_str2json( xmlData );
               return deferred.resolve(companiesData);
             })
             .error(function(data, status, headers, config) {
