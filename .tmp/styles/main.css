@@ -41220,6 +41220,53 @@ button.close {
 
 @media -sass-debug-info {
   filename {
+    font-family: file\:\/\/\/Users\/JPablo\/Sites\/qsensei-exercise\/app\/styles\/modules\/_table\.scss;
+  }
+
+  line {
+    font-family: \0000314;
+  }
+}
+
+.glyphicon-chevron-down {
+  font-size: 10px;
+  float: right;
+  cursor: pointer;
+  height: 17px;
+  line-height: 17px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/JPablo\/Sites\/qsensei-exercise\/app\/styles\/modules\/_table\.scss;
+  }
+
+  line {
+    font-family: \0000321;
+  }
+}
+
+thead {
+  background-color: #606060;
+  color: white;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/JPablo\/Sites\/qsensei-exercise\/app\/styles\/modules\/_table\.scss;
+  }
+
+  line {
+    font-family: \0000324;
+  }
+}
+
+thead th:first-child {
+  width: 50px;
+}
+
+@media -sass-debug-info {
+  filename {
     font-family: file\:\/\/\/Users\/JPablo\/Sites\/qsensei-exercise\/app\/styles\/modules\/_animation\.scss;
   }
 
@@ -41608,4 +41655,18 @@ body {
   .jumbotron {
     border-bottom: 0;
   }
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/JPablo\/Sites\/qsensei-exercise\/app\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003101;
+  }
+}
+
+.well.well-sm {
+  margin-top: 2em;
 }

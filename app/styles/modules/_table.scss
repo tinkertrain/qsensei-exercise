@@ -10,3 +10,18 @@
 .company__name--edit {
   width: 50%;
 }
+
+.glyphicon-chevron-down {
+  font-size: 10px;
+  float: right;
+  cursor: pointer;
+  height: 17px;
+  line-height: 17px;
+}
+thead {
+  background-color: darken(#f9f9f9, 60%);
+  color: white;
+  th:first-child{
+    width: 50px;
+  }
+}

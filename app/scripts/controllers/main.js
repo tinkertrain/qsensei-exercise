@@ -36,7 +36,7 @@ angular.module('qsenseiExerciseApp')
         };
 
         $scope.companiesData = null;
-        $scope.byID = '-_id';
+        $scope.sortParameter = '-_id';
 
         /**
          * Method to edit the company name
@@ -69,5 +69,6 @@ angular.module('qsenseiExerciseApp')
             company.focus = false;
           }
         };
+
       }
   ]);

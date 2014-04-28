@@ -5,11 +5,8 @@
   <h3 class="text-muted">Q-Sensei exercise</h3>
 </div>
 
-<div class="row">
-  <div class="col-xs-12">
-    <p>Click on a company name to edit it. Press enter to save the change or click on another company name. Press ESC to discard the change.</p>
-  </div>
-</div>
+<div class="well well-sm">Click on a company name to edit it. Press enter to save the change or click on another company name. Press ESC to discard the change.</div>
+
 <div class="row">
   <div class="col-xs-12">
     <h3>Companies&nbsp;
@@ -25,12 +22,18 @@
     <table class="table table-striped table-bordered table-hover" ng-init="setTable()">
       <thead>
         <tr>
-          <th>ID</th>
-          <th>Name</th>
+          <th>
+            <span ng-click="sortParameter = '-_id'; reverse = false;">ID </span>
+            <span class="glyphicon glyphicon-chevron-down" ng-click="sortParameter = '_id'; reverse = !reverse;"></span>
+          </th>
+          <th>
+            <span ng-click="sortParameter = 'name'; reverse = false;">Name</span>
+            <span class="glyphicon glyphicon-chevron-down" ng-click="sortParameter = '-name'; reverse = !reverse;">
+          </th>
         </tr>
       </thead>
       <tbody>
-        <tr ng-repeat="company in companiesData | orderBy:byID">
+        <tr ng-repeat="company in companiesData | orderBy:sortParameter:reverse">
           <th>{{company._id}}</th>
           <th>
             <div class="company__name" ng-click="editCompany(company)" ng-hide="company.editing" ng-mouseover="company.mouseOver = true" ng-mouseleave="company.mouseOver = false" >
