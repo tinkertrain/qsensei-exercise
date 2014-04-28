@@ -28,7 +28,6 @@ angular.module('qsenseiExerciseApp')
             _.forEach(companiesData, function(company) {
               company._id = parseFloat(company._id, 10);
             });
-            console.log(companiesData);
             $scope.companiesData = companiesData;
           });
         };
