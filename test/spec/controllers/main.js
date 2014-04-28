@@ -13,16 +13,20 @@ describe('Controller: MainCtrl', function () {
         }});
     };
     var companiesSpy;
-    var companiesDataMock = [
-      {
-        _id : "0",
-        name: "Wal-Mart Stores"
-      },
-      {
-        _id : "1",
-        name :"Royal Dutch Shell"
+    var companiesDataMock = {
+      companies: {
+        company: [
+          {
+            _id : "0",
+            name: "Wal-Mart Stores"
+          },
+          {
+            _id : "1",
+            name :"Royal Dutch Shell"
+          }
+        ]
       }
-    ];
+    };
 
   // Initialize the controller and a mock scope
   beforeEach(inject(function ($controller, $rootScope, $injector) {
@@ -38,9 +42,9 @@ describe('Controller: MainCtrl', function () {
     expect(companiesSpy).toHaveBeenCalledWith();
   });
 
-  it('should set the comanies to the result of the service call', function() {
+  it('should set the companies to the result of the service call', function() {
     scope.setTable();
-    expect(scope.companiesData).toEqual(companiesDataMock);
+    expect(scope.companiesData).toEqual(companiesDataMock.companies.company);
   });
 
   it('should initialize $scope.companies to null', function () {

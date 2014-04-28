@@ -13,7 +13,7 @@ angular.module('qsenseiExerciseApp')
             if(company.editing) {
               company.editing = false;
             }
-          })
+          });
         };
 
         /**
@@ -21,7 +21,7 @@ angular.module('qsenseiExerciseApp')
          */
         $scope.setTable = function() {
           Companies.get().then(function(data) {
-            $scope.companiesData = data;
+            $scope.companiesData = data.companies.company;
           });
         };
 

@@ -12,9 +12,5 @@ describe('Directive: focusME', function () {
     scope = $rootScope.$new();
   }));
 
-  it('should make hidden element visible', inject(function ($compile) {
-    element = angular.element('<focus-m-e></focus-m-e>');
-    element = $compile(element)(scope);
-    expect(element.text()).toBe('this is the focusME directive');
-  }));
+
 });

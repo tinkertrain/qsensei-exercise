@@ -11,16 +11,20 @@ describe('Service: Companies', function () {
 
   beforeEach(inject(function (_Companies_) {
     Companies = _Companies_;
-    companiesDataMock = [
-      {
-        _id : "0",
-        name: "Wal-Mart Stores"
-      },
-      {
-        _id : "1",
-        name :"Royal Dutch Shell"
-      }
-    ];
+    companiesDataMock = {
+          companies: {
+            company: [
+              {
+                _id : "0",
+                name: "Wal-Mart Stores"
+              },
+              {
+                _id : "1",
+                name :"Royal Dutch Shell"
+              }
+            ]
+          }
+        };
   }));
 
   describe('get', function () {

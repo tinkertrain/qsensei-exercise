@@ -21,7 +21,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr ng-repeat="company in companiesData.companies.company">
+        <tr ng-repeat="company in companiesData">
           <th>{{company._id}}</th>
           <th>
             <div class="company__name" ng-click="editCompany(company)" ng-hide="company.editing" ng-mouseover="company.mouseOver = true" ng-mouseleave="company.mouseOver = false">
