@@ -19,3 +19,16 @@ Some notes about the process:
   - When you finish editing and press the enter key, a little notification shows it was succesful (in real life and if it's calling a webservice there would be an error notice too).
   - You can press the esc key to cancel the edition and leave the name as it was originally.
   - You can sort the columns by name or id, asc or desc.
+
+###Run the app
+
+Needs nodejs, grunt and bower.
+
+Easiest way:
+- run `npm install -g yo`
+- Clone the repo
+- cd into the repo dir
+- run `npm install`
+- run `bower install`
+- run `grunt serve` it will open a browser with the app running
+- running `grunt test` will run the unit tests.
