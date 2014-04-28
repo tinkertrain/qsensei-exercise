@@ -13,6 +13,9 @@ angular.module('qsenseiExerciseApp')
             if(company.editing) {
               company.editing = false;
             }
+            if(company.finishedEdition) {
+              company.finishedEdition = false;
+            }
           });
         };
 
@@ -21,18 +24,27 @@ angular.module('qsenseiExerciseApp')
          */
         $scope.setTable = function() {
           Companies.get().then(function(data) {
-            $scope.companiesData = data.companies.company;
+            var companiesData = data.companies.company;
+
+            _.forEach(companiesData, function(company) {
+              if(company._id.length === 1) {
+                company._id = '0' + company._id;
+              }
+            });
+            $scope.companiesData = companiesData;
           });
         };
 
         $scope.companiesData = null;
+        $scope.byID = '-_id';
 
         /**
          * Method to edit the company name
          * @param  {OBJ} company The company to edit
          */
         $scope.editCompany = function(company) {
-          clearAllEditing($scope.companiesData.companies.company);
+          company.originalName = company.name;
+          clearAllEditing($scope.companiesData);
           company.editing = true;
           company.focus = true;
         };
@@ -42,10 +54,17 @@ angular.module('qsenseiExerciseApp')
          * @param  {obj} $event  The event
          * @param  {obj} company The company being edited
          */
-        $scope.stopEditing = function($event, company) {
+        $scope.finishEditing = function($event, company) {
           if($event.keyCode === 13 || $event.charCode === 13) {
             company.editing = false;
             company.focus = false;
+            company.finishedEdition = true;
+          }
+          if($event.keyCode === 27 || $event.charCode === 27) {
+            company.name = company.originalName;
+            company.editing = false;
+            company.focus = false;
+            company.finishedEdition = true;
           }
         };
       }
