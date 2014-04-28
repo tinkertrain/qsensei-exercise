@@ -7,16 +7,44 @@ describe('Controller: MainCtrl', function () {
 
   var MainCtrl,
     scope;
+    var spyOnAngularService = function(service, methodName, result) {
+      return spyOn(service, methodName).andReturn( {then: function(fn) {
+          fn(result);
+        }});
+    };
+    var companiesSpy;
+    var companiesDataMock = [
+      {
+        _id : "0",
+        name: "Wal-Mart Stores"
+      },
+      {
+        _id : "1",
+        name :"Royal Dutch Shell"
+      }
+    ];
 
   // Initialize the controller and a mock scope
-  beforeEach(inject(function ($controller, $rootScope) {
+  beforeEach(inject(function ($controller, $rootScope, $injector) {
     scope = $rootScope.$new();
     MainCtrl = $controller('MainCtrl', {
       $scope: scope
     });
+    companiesSpy = spyOnAngularService($injector.get('Companies'), 'get', companiesDataMock);
   }));
 
-  it('should attach a list of awesomeThings to the scope', function () {
-    expect(scope.awesomeThings.length).toBe(3);
+  it('should call the Companies.get method', function () {
+    scope.setTable();
+    expect(companiesSpy).toHaveBeenCalledWith();
   });
+
+  it('should set the comanies to the result of the service call', function() {
+    scope.setTable();
+    expect(scope.companiesData).toEqual(companiesDataMock);
+  });
+
+  it('should initialize $scope.companies to null', function () {
+    expect(scope.companiesData).toBeNull();
+  });
+
 });
