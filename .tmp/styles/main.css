@@ -41303,7 +41303,8 @@ thead th:first-child {
   }
 }
 
-.companies__add {
+.companies__add,
+.companies__search {
   margin: 1em 0;
 }
 

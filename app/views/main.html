@@ -7,11 +7,7 @@
 
 <div class="well well-sm">Click on a company name to edit it. Press enter to save the change. Press ESC to discard the change.</div>
 
-<div class="row">
-  <div class="col-xs-3">
-    <h3>Companies</h3>
-  </div>
-</div>
+
 <div class="row">
   <div class="col-xs-12">
     <form class="companies__add form-inline" role="form">
@@ -23,6 +19,21 @@
         <span class="glyphicon glyphicon-plus"></span>
         &nbsp;Add
       </button>
+    </form>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-3">
+    <h3>Companies</h3>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <form class="companies__search form-inline" role="form">
+      <div class="form-group">
+        <label for="searchCompany">Search</label>
+        <input id="searchCompany" class="form-control" type="text" ng-model="searchName" placeholder="Search company">
+      </div>
     </form>
   </div>
 </div>
@@ -42,7 +53,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr ng-repeat="company in companiesData | orderBy:sortParameter:reverse" ng-class="{'company--new': company.new}">
+        <tr ng-repeat="company in companiesData | orderBy:sortParameter:reverse | filter:searchName" ng-class="{'company--new': company.new}">
           <th class="company__id">{{company._id}}</th>
           <th>
             <div class="company__name" ng-click="editCompany(company)" ng-hide="company.editing" ng-mouseover="company.mouseOver = true" ng-mouseleave="company.mouseOver = false" >
