@@ -3,7 +3,10 @@
   .glyphicon {
     float: right;
   }
+  .glyphicon-ok {
+    color: $brand-success;
+  }
 }
 .company__name--edit {
-  width: 100%;
+  width: 50%;
 }

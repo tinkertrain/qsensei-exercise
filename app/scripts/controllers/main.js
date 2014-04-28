@@ -1,8 +1,8 @@
 'use strict';
 
 angular.module('qsenseiExerciseApp')
-  .controller('MainCtrl', ['$scope', 'Companies',
-      function($scope, Companies) {
+  .controller('MainCtrl', ['$scope', 'Companies', '$timeout',
+      function($scope, Companies, $timeout) {
 
         /**
          * Method to clear the edit state
@@ -50,7 +50,7 @@ angular.module('qsenseiExerciseApp')
         };
 
         /**
-         * Method to stop the edition on 'enter' keyup
+         * Method to finish the edition on 'enter' and 'esc' keyup
          * @param  {obj} $event  The event
          * @param  {obj} company The company being edited
          */
@@ -59,12 +59,14 @@ angular.module('qsenseiExerciseApp')
             company.editing = false;
             company.focus = false;
             company.finishedEdition = true;
+            $timeout(function() {
+              company.finishedEdition = false;
+            }, 2000);
           }
           if($event.keyCode === 27 || $event.charCode === 27) {
             company.name = company.originalName;
             company.editing = false;
             company.focus = false;
-            company.finishedEdition = true;
           }
         };
       }

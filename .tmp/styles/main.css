@@ -41164,7 +41164,7 @@ button.close {
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/JPablo\/Sites\/qsensei-exercise\/app\/styles\/modules\/table\.scss;
+    font-family: file\:\/\/\/Users\/JPablo\/Sites\/qsensei-exercise\/app\/styles\/modules\/_table\.scss;
   }
 
   line {
@@ -41178,7 +41178,7 @@ button.close {
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/JPablo\/Sites\/qsensei-exercise\/app\/styles\/modules\/table\.scss;
+    font-family: file\:\/\/\/Users\/JPablo\/Sites\/qsensei-exercise\/app\/styles\/modules\/_table\.scss;
   }
 
   line {
@@ -41192,16 +41192,171 @@ button.close {
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/JPablo\/Sites\/qsensei-exercise\/app\/styles\/modules\/table\.scss;
+    font-family: file\:\/\/\/Users\/JPablo\/Sites\/qsensei-exercise\/app\/styles\/modules\/_table\.scss;
   }
 
   line {
-    font-family: \000037;
+    font-family: \000036;
+  }
+}
+
+.company__name .glyphicon-ok {
+  color: #5cb85c;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/JPablo\/Sites\/qsensei-exercise\/app\/styles\/modules\/_table\.scss;
+  }
+
+  line {
+    font-family: \0000310;
   }
 }
 
 .company__name--edit {
-  width: 100%;
+  width: 50%;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/JPablo\/Sites\/qsensei-exercise\/app\/styles\/modules\/_animation\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.animated {
+  -webkit-animation-duration: 0.25s;
+  animation-duration: 0.25s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInDown {
+  /* line 9, ../../app/styles/modules/_animation.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+
+  /* line 15, ../../app/styles/modules/_animation.scss */
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  /* line 23, ../../app/styles/modules/_animation.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+
+  /* line 30, ../../app/styles/modules/_animation.scss */
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/JPablo\/Sites\/qsensei-exercise\/app\/styles\/modules\/_animation\.scss;
+  }
+
+  line {
+    font-family: \0000338;
+  }
+}
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+
+@-webkit-keyframes fadeOutUp {
+  /* line 44, ../../app/styles/modules/_animation.scss */
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  /* line 50, ../../app/styles/modules/_animation.scss */
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes fadeOutUp {
+  /* line 58, ../../app/styles/modules/_animation.scss */
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  /* line 65, ../../app/styles/modules/_animation.scss */
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/JPablo\/Sites\/qsensei-exercise\/app\/styles\/modules\/_animation\.scss;
+  }
+
+  line {
+    font-family: \0000373;
+  }
+}
+
+.fadeOutUp {
+  -webkit-animation-name: fadeOutUp;
+  animation-name: fadeOutUp;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/JPablo\/Sites\/qsensei-exercise\/app\/styles\/modules\/_animation\.scss;
+  }
+
+  line {
+    font-family: \0000378;
+  }
+}
+
+.glyphicon.glyphicon-ok.ng-enter {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/JPablo\/Sites\/qsensei-exercise\/app\/styles\/modules\/_animation\.scss;
+  }
+
+  line {
+    font-family: \0000383;
+  }
+}
+
+.glyphicon.glyphicon-ok.ng-leave {
+  -webkit-animation-name: fadeOutUp;
+  animation-name: fadeOutUp;
 }
 
 @media -sass-debug-info {
@@ -41210,7 +41365,7 @@ button.close {
   }
 
   line {
-    font-family: \0000311;
+    font-family: \0000312;
   }
 }
 
@@ -41229,7 +41384,7 @@ button.close {
   }
 
   line {
-    font-family: \0000319;
+    font-family: \0000320;
   }
 }
 
@@ -41246,7 +41401,7 @@ body {
   }
 
   line {
-    font-family: \0000325;
+    font-family: \0000326;
   }
 }
 
@@ -41265,7 +41420,7 @@ body {
   }
 
   line {
-    font-family: \0000333;
+    font-family: \0000334;
   }
 }
 
@@ -41281,7 +41436,7 @@ body {
   }
 
   line {
-    font-family: \0000338;
+    font-family: \0000339;
   }
 }
 
@@ -41300,7 +41455,7 @@ body {
   }
 
   line {
-    font-family: \0000346;
+    font-family: \0000347;
   }
 }
 
@@ -41316,7 +41471,7 @@ body {
   }
 
   line {
-    font-family: \0000352;
+    font-family: \0000353;
   }
 }
 
@@ -41332,7 +41487,7 @@ body {
   }
 
   line {
-    font-family: \0000357;
+    font-family: \0000358;
   }
 }
 
@@ -41347,7 +41502,7 @@ body {
   }
 
   line {
-    font-family: \0000362;
+    font-family: \0000363;
   }
 }
 
@@ -41364,7 +41519,7 @@ body {
   }
 
   line {
-    font-family: \0000368;
+    font-family: \0000369;
   }
 }
 
@@ -41378,7 +41533,7 @@ body {
   }
 
   line {
-    font-family: \0000372;
+    font-family: \0000373;
   }
 }
 
@@ -41395,7 +41550,7 @@ body {
     }
 
     line {
-      font-family: \0000378;
+      font-family: \0000379;
     }
 }
 
@@ -41411,7 +41566,7 @@ body {
     }
 
     line {
-      font-family: \0000383;
+      font-family: \0000384;
     }
 }
 
@@ -41430,7 +41585,7 @@ body {
     }
 
     line {
-      font-family: \0000390;
+      font-family: \0000391;
     }
 }
 
@@ -41446,7 +41601,7 @@ body {
     }
 
     line {
-      font-family: \0000394;
+      font-family: \0000395;
     }
 }
 
