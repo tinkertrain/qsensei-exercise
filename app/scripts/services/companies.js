@@ -1,9 +1,10 @@
 'use strict';
 
 angular.module('qsenseiExerciseApp')
-  .service('Companies', ['$http', function Companies($http) {
+  .service('Companies', ['$http', '$q', function Companies($http, $q) {
       return {
         get: function() {
+          var deferred = $q.defer();
           $http(
             {
               method: 'GET',
@@ -11,15 +12,16 @@ angular.module('qsenseiExerciseApp')
               transformResponse: function(xmlData, headersGetter) {
                 var x2js = new X2JS();
                 var companiesData = x2js.xml_str2json( xmlData );
-                return companiesData;
+                return companiesData.companies.company;
               }
             })
             .success(function(companiesData) {
-              console.log(companiesData);
+              return deferred.resolve(companiesData);
             })
             .error(function(data, status, headers, config) {
-              console.log('An error ocurred: ' + status);
+              deferred.reject('An error ocurred: ' + status);
             });
+            return deferred.promise;
         }
       };
     }]);
