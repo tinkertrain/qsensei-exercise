@@ -41247,7 +41247,7 @@ button.close {
 }
 
 thead {
-  background-color: #606060;
+  background-color: #797979;
   color: white;
 }
 
@@ -41263,6 +41263,20 @@ thead {
 
 thead th:first-child {
   width: 50px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/JPablo\/Sites\/qsensei-exercise\/app\/styles\/modules\/_forms\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.companies__add {
+  margin: 1em 0;
 }
 
 @media -sass-debug-info {
@@ -41412,7 +41426,7 @@ thead th:first-child {
   }
 
   line {
-    font-family: \0000312;
+    font-family: \0000313;
   }
 }
 
@@ -41431,7 +41445,7 @@ thead th:first-child {
   }
 
   line {
-    font-family: \0000320;
+    font-family: \0000321;
   }
 }
 
@@ -41448,7 +41462,7 @@ body {
   }
 
   line {
-    font-family: \0000326;
+    font-family: \0000327;
   }
 }
 
@@ -41467,7 +41481,7 @@ body {
   }
 
   line {
-    font-family: \0000334;
+    font-family: \0000335;
   }
 }
 
@@ -41483,7 +41497,7 @@ body {
   }
 
   line {
-    font-family: \0000339;
+    font-family: \0000340;
   }
 }
 
@@ -41502,7 +41516,7 @@ body {
   }
 
   line {
-    font-family: \0000347;
+    font-family: \0000348;
   }
 }
 
@@ -41518,7 +41532,7 @@ body {
   }
 
   line {
-    font-family: \0000353;
+    font-family: \0000354;
   }
 }
 
@@ -41534,7 +41548,7 @@ body {
   }
 
   line {
-    font-family: \0000358;
+    font-family: \0000359;
   }
 }
 
@@ -41549,7 +41563,7 @@ body {
   }
 
   line {
-    font-family: \0000363;
+    font-family: \0000364;
   }
 }
 
@@ -41566,7 +41580,7 @@ body {
   }
 
   line {
-    font-family: \0000369;
+    font-family: \0000370;
   }
 }
 
@@ -41580,7 +41594,7 @@ body {
   }
 
   line {
-    font-family: \0000373;
+    font-family: \0000374;
   }
 }
 
@@ -41597,7 +41611,7 @@ body {
     }
 
     line {
-      font-family: \0000379;
+      font-family: \0000380;
     }
 }
 
@@ -41613,7 +41627,7 @@ body {
     }
 
     line {
-      font-family: \0000384;
+      font-family: \0000385;
     }
 }
 
@@ -41632,7 +41646,7 @@ body {
     }
 
     line {
-      font-family: \0000391;
+      font-family: \0000392;
     }
 }
 
@@ -41648,7 +41662,7 @@ body {
     }
 
     line {
-      font-family: \0000395;
+      font-family: \0000396;
     }
 }
 
@@ -41663,7 +41677,7 @@ body {
   }
 
   line {
-    font-family: \00003101;
+    font-family: \00003102;
   }
 }
 

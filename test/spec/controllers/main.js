@@ -51,4 +51,27 @@ describe('Controller: MainCtrl', function () {
     expect(scope.companiesData).toBeNull();
   });
 
+  describe('Add company', function () {
+    it('should have a method to add a company', function () {
+       expect(scope.addCompany).toBeDefined();
+    });
+
+    it('should add a company to the companies array', function () {
+      scope.setTable();
+      scope.addCompany('test company');
+      expect(scope.companiesData.length).toEqual(3);
+    });
+
+    it('should set the id of the new company automatically', function () {
+      scope.setTable();
+      scope.addCompany('test company');
+      expect(scope.companiesData[scope.companiesData.length - 1]._id).toEqual(3);
+      scope.addCompany('test company 2');
+      expect(scope.companiesData[scope.companiesData.length - 1]._id).toEqual(4);
+    });
+  });
+
+
+
+
 });

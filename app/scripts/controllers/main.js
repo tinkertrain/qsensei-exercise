@@ -25,12 +25,10 @@ angular.module('qsenseiExerciseApp')
         $scope.setTable = function() {
           Companies.get().then(function(data) {
             var companiesData = data.companies.company;
-
             _.forEach(companiesData, function(company) {
-              if(company._id.length === 1) {
-                company._id = '0' + company._id;
-              }
+              company._id = parseFloat(company._id, 10);
             });
+            console.log(companiesData);
             $scope.companiesData = companiesData;
           });
         };
@@ -67,6 +65,21 @@ angular.module('qsenseiExerciseApp')
             company.name = company.originalName;
             company.editing = false;
             company.focus = false;
+          }
+        };
+
+        /**
+         * add a company
+         * @param {string} name The name of the new company
+         */
+        $scope.addCompany = function(name) {
+          var newCompany = {};
+          var newID;
+          if(name !== '') {
+            newID = $scope.companiesData.length;
+            newCompany.name = name;
+            newCompany._id = newID;
+            $scope.companiesData.push(newCompany);
           }
         };
 
