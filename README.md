@@ -8,6 +8,7 @@ Some notes about the process:
   - Bootstrap (for a quick layout)
   - Sass
   - Lodash (I incorporated it in case it was useful, it turned out I really didn't need it, I still left it)
+  - x2js (to convert xml to json)
   - Karma and Jasmine (for testing)
 
 - I went with angular to develop the exercise because it allowed me to concentrate on the functionality without having to write a bunch of boilerplate and have some time for some nice UX touches.
